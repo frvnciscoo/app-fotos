@@ -85,7 +85,7 @@ if uploaded_files:
                 img = Image.open(uploaded_file)
                 
                 # 1. Llamar a la IA
-                texto_respuesta = analizar_imagen(img, "AIzaSyBso57hDsgbvDJRE6OkYDwFrHwDunyAk8E")
+                texto_respuesta = analizar_imagen(img, st.secrets["GEMINI_KEY"])
                 
                 # 2. Convertir respuesta a datos útiles
                 datos = limpiar_json(texto_respuesta)
@@ -140,4 +140,5 @@ if uploaded_files:
                 file_name="reporte_contenedores.xlsx",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                 type="primary"
+
             )
