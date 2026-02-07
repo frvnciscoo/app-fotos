@@ -109,7 +109,7 @@ if uploaded_files:
                 })
             
             # Pausa breve para estabilidad
-            time.sleep(4)
+            time.sleep(10)
 
         status_text.text("✅ ¡Procesamiento finalizado!")
         st.balloons()
@@ -142,3 +142,4 @@ if uploaded_files:
                 type="primary"
 
             )
+
