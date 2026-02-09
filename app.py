@@ -17,7 +17,7 @@ def analizar_imagen(image, key):
     genai.configure(api_key=key)
     
     # ACTUALIZACIÓN: Usamos el modelo que sí tienes disponible
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = """
     Actúa como un sistema OCR experto en logística. Analiza la imagen del contenedor.
@@ -142,5 +142,6 @@ if uploaded_files:
                 type="primary"
 
             )
+
 
 
